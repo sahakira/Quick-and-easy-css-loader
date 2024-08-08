@@ -1,0 +1,34 @@
+.loader{
+    height: 50px;
+    transform-origin: buttom center;
+    animation: rotate 3s linear infinite;
+}
+.circle{
+    background-color: rgb(202, 160, 202);
+    display: inline-block;
+    height: 40px;
+    border-radius: 50%;
+    width: 40px;
+    transform: scale(0);
+    animation: grow 2s linear infinite;
+    margin: -10px;
+}
+.circle:nth-child(2){
+    background-color: aqua;
+    animation-delay: 0.75s;
+}
+@keyframes rotate{
+    to{
+        transform: rotate(360deg);
+    }
+}
+@keyframes grow {
+    50% {
+        transform: scale(1);
+    }
+}
+/* @keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+} */

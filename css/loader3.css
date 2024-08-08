@@ -1,0 +1,29 @@
+.loader{
+    display: fkex;
+    justify-content: center;
+    align-items: center;
+}
+.loader > span{
+    display: inline-block;
+    height: 20px;
+    width: 10px;
+    background-color: aqua;
+    border-radius: 50%;
+    margin: 0.8px;
+    animation: bounce 0.8s infinite alternate;
+}
+.loader>span:nth-child(2){
+  background-color: blue;
+  animation-delay: 1s;
+}
+.loader>span:nth-child(3){
+background-color: brown;
+animation-delay: 2s;
+}
+@keyframes bounce{
+    to{
+        width: 20px;
+        height: 20px;
+        transform: translate3D(0, -80px, 0);
+    }
+}
